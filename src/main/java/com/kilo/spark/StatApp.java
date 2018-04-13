@@ -45,7 +45,7 @@ public class StatApp {
 
     @PostMapping(value = "/course_clickcount_dynamic")
     public List<CourseClickCount> courseClickCount() throws Exception {
-        List<CourseClickCount>list = courseClickCountDAO.query("imooc_course_clickcount","20180412");
+        List<CourseClickCount>list = courseClickCountDAO.query("imooc_course_clickcount","20180413");
 
         for (CourseClickCount model : list){
             model.setName(courses.get(model.getName().substring(9)));
